@@ -1,0 +1,313 @@
+/*Fjerner alle stylingelementer på siden og sætter en default font på + en back-up font*/
+*{
+    margin: 0;
+    background: none;
+    border: none;
+    font-family: 'comic sans', sans-serif;
+}
+
+/*Her sætter jeg en størrelse på logoet*/
+.logo{
+    width: 4rem;
+    margin-top: 10%;
+}
+
+/*Her styler jeg mine menupunkter og laver plads imellem dem.*/
+/*Derefter sætter jeg en højde på den og en baggrundsfarve samt tekstfarve*/
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #45dec9;
+    height: 5.6rem;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/*Her laver jeg lige plads til menulinksense*/
+.menu li{
+    margin: 0.5rem;
+}
+
+/*Her styler jeg de sidste to menupunkter for sig selv*/
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Her sætter jeg en hover på så submenuen vises når man holder musen over*/
+.menu li:hover .submenu {
+    display: block; 
+}
+
+/*Her skjuler jeg submenuen, når men ikke hover på dem, giver baggrunden en farve og giver lidt plads omkring punkterne*/
+/*Og så sætter jeg det hele foran alt andet med z-index og sætter skygge på*/
+.submenu {
+    display: none;
+    list-style: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    border-radius: 1rem;
+    z-index: 1;
+    padding:0.5rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+
+/*Her sætter jeg baggrundsfarve på min footer og tilføjer padding.*/
+/*Derefter fastsætter jeg positionen, længden og højden og fjerne list styling.*/
+footer {
+    background-color: #70E5D5;
+    width: 100%;
+    list-style: none;
+    height: 18rem;
+    
+}
+
+/*Her styler jeg den øverste del af footeren ved at sætter en højde på samt centrere dem og lave plads imellem*/
+.upfooter {
+    display: flex;
+    justify-content: space-evenly;
+    height: 4rem;
+    align-items: center;
+}
+
+/*Her fjerner jeg stregen under linksene og laver dem sort*/
+.upfooter a{
+    text-decoration: none;
+    color: black;
+}
+
+/*Her fjerner jeg list-styling*/
+.upfooter{
+    list-style: none;
+}
+
+/*Her styler jeg den nederste del af footeren og centrerer elementerne deri*/
+.downfooter{
+    background-color: #45dec9;
+    height:14rem;
+    bottom:0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Her sætter jeg størrelsen på sociale medier billedet*/
+.socialeMedier{
+    width: 17rem;
+    margin-bottom: 1rem;
+}
+
+/*Her sætter jeg størrelsen på kontakt kundeservice billedet */
+.kontakt{
+    width: 17rem;
+}
+
+
+/*Her styler jeg sidebaren med skygger og farve*/
+/*Derudover fastsætter jeg også dets position og størrelse*/
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 13rem;
+    z-index: 999;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-color: white;
+    backdrop-filter: blur(10px);
+}
+
+/*Her fjerner jeg list styling fra sidebar menupunkterne*/
+.sidebar li{
+   padding: 1.3rem;
+   list-style: none;
+}
+
+/*Her styler jeg submenu punkterne*/
+.sidebar a{
+    text-decoration: none;
+    color: black;
+}
+
+/*Her laver jeg en hover funktion så sidebaren dukker op*/
+.sidebar li:hover .sideSubmenu {
+    display: block; 
+}
+
+
+/*Her styler jeg submenu punkter med farve og plads*/
+.sideSubmenu {
+    display: none;
+    list-style: none;
+    background-color: #f9f9f9;
+    z-index: 1;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    position:absolute;
+    max-height: 30vh;
+    overflow-y:auto;
+}
+ 
+/*Her laver jeg plads mellem menupunkterne*/
+.sideSubmenu li{
+    padding: 0.7rem;
+}
+
+/*Her sætter jeg en margin på shopping cart ikonet så det får plads*/
+#shopping{
+    margin-right: 1.5rem;
+}
+
+
+#alt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+#kopper img{
+    height: 100vh;
+}
+
+#tekst{
+width: 40vw;
+margin-left: 2rem;
+margin-right: 1rem;
+margin-top: 2rem;
+margin-bottom: 1rem;
+}
+
+#tekst h1, h2{
+display: flex;
+justify-content: center;
+}
+
+#tekst p{
+    margin-top: 1rem;
+    font-size:1.1rem ;
+}
+
+#nedTekst{
+    margin-top:2rem;
+}
+
+#nedTekst li{
+    margin-top: 0.5rem;
+    list-style: none;
+}
+
+#alt li{
+    list-style: none;
+}
+
+/* Tilføj styling til ankerelementer i sektionen med id'et "tekst" */
+#tekst a {
+    display: inline-block; /* Gør ankerelementerne til blokelementer, så de får en boksform */
+    padding: 0.5rem 1rem; /* Tilføj polstring til at skabe plads omkring teksten inden i boksen */
+    border: 2px solid black; /* Tilføj en solid sort kant rundt om boksen */
+    margin: 0.5rem; /* Tilføj en lille margin rundt om boksen for at adskille dem */
+    border-radius: 0.5rem; /* Tilføj afrundede hjørner til boksen */
+    text-decoration: none; /* Fjern understregningen fra ankerelementerne */
+    color: black; /* Sæt tekstfarven til sort */
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+h2{
+    margin-bottom: 2rem;
+}
+
+
+/*Her styler jeg skræem når den er max 1200px*/
+@media only screen and (min-width: 1025px) {
+    #burgerbar{
+        display: none;
+    }
+}
+
+/*Her fastsætter jeg burgerbaren når når skærmen er mindre*/
+@media only screen and (max-width: 1200px) {
+    .click {
+      display: none;
+    }
+
+    /*Her sætter jeg mellemrum mellem elementerne*/
+    .menu{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/*Her fastsætter jeg burgerbaren når når skærmen er endnu mindre*/
+@media only screen and (max-width: 900px) {
+    /*Her centrerer jeg elementerne og stablerne dem lodret */
+    #alt {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        flex-direction: column; 
+    }
+    /*Her centrerer jeg elementerne og sætter margin på */
+    #tekst {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    /*Her sætter jeg bredden på billedet*/
+    img{
+        width: 100vw;
+    }
+    
+}
+
+/*Her fastsætter jeg burgerbaren når når skærmen er endnu mindre*/
+@media only screen and (max-width: 600px) {
+    /*Her sætter jeg retning til column så elementerne går nedad*/
+    .upfooter{
+        display: flex;
+        flex-direction: column;
+    }
+    /*Her sætter jeg en bredde på billederne i footeren og fjerne margin*/
+    .socialeMedier, .kontakt{
+        width: 15rem;
+        margin: 0;
+    }
+
+    /*Her centrerer  elementerne i footeren og en højde. Og så gør jeg den relativ*/
+    .downfooter{
+        display: flex;
+        justify-content: center;
+        height: 10rem;
+        position: relative;
+        width: 100%;
+        top: 70%;
+    }
+    /*Her sætter jeg en margin på*/
+    .upfooter li{
+        margin: 1rem;
+    }
+ 
+}
+
+
+/*Her laver jeg mine egne font, som er en jeg har hentet ned fra google og kaldt for "comic sans"*/
+/*Jeg har placeret den downloadede font i mappen "fonts", som jeg også har linket til her*/
+@font-face {
+    font-family: 'comic sans';
+    src: url(../fonts/COMICSANS.TTF) format('truetype');
+}

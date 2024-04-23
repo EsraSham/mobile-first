@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Normal</title>
+    <meta name="author" content="Esra Shamasneh">
+    <meta name="keywords" content="normal, produkter, butik, webshop, unikmand,normal job, makeup, snacks, hudpleje, rengøringsmidler">
+    <meta name="description" content="Normal tilbyder et bredt udvalg af produkter der blandt andet indebærer trending produkter, nyheder, testvindere, gavekort. Derudover kan du finde svar på en masse spørgsmål i vores FAQ og hjælp til returpolitik og navigation i butikken.">
+    <link rel="stylesheet" href="css/produktoversigt.css">
+    <link rel="shortcut icon" href="img/logofavicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+<header>
+<!--Her laver jeg navbaren som indholder alle mine submenuer. Her linker jeg også til de tre artikler jeg har lavet -->
+<!--Jeg har sat forskellige klasser og id på menupunkterne så jeg kan style dem i css-->
+<nav class="navbar">
+    <ul class="menu">
+
+        <li id="burgerbar" onclick=showSidebar()><a href="#"><i class="material-icons">menu</i></a></li>
+        <li><a href="index.html"><img class= "logo" src="img/logo.webp" alt="Normal logo"></a></li>
+        
+        <li class="click">Produkter
+            <ul class="submenu">
+                <li><a href="produktoversigt.html">Produktoversigt</a></li>
+                <li><a href="hej.html">Normale varer</a></li>
+                <li><a href="hej.html">Unormale priser</a></li>
+                <li><a href="trending.html">Trending</a></li>
+                <li><a href="hej.html">Nyheder</a></li>
+                <li><a href="hej.html">Testvindere</a></li>
+            </ul>
+        </li>
+        <li class="click">Butik
+            <ul class="submenu">
+                <li><a href="hej.html">Find butik/åbningstid</a></li>
+                <li><a href="hej.html">Planlæg dit besøg</a></li>
+                <li><a href="navigation.html">Navigation i butik</a></li>
+                <li><a href="hej.html">Normal i andre lande</a></li>
+                <li><a href="hej.html">Gæstebogen</a></li>
+                <li><a href="hej.html">Bestsellers</a></li>
+            </ul>
+        </li>
+        <li class="click">Webshop
+            <ul class="submenu">
+                <li><a href="hej.html">Køb gavekort</a></li>
+                <li><a href="hej.html">Er vi live?</a></li>
+                <li><a href="hej.html">Retur</a></li>
+                <li><a href="hej.html">FAQ´en</a></li>
+            </ul>
+        </li>
+        <li class="click">Unikmand
+            <ul class="submenu">
+                <li><a href="hej.html">Unikmand anbefaler</a></li>
+                <li><a href="hej.html">Få mig ud-knappen</a></li>
+                <li><a href="hej.html">Brevkassen</a></li>
+            </ul>
+        </li>
+        <li class="click">Om Normal
+            <ul class="submenu">
+                <li><a href="hej.html">Om os</a></li>
+                <li><a href="hej.html">Ordbogen</a></li>
+                <li><a href="hej.html">Følg os</a></li>
+                <li><a href="hej.html">Lykkeliga</a></li>
+                <li><a href="hej.html">FAQ</a></li>
+                <li><a href="hej.html">Warehouse</a></li>
+                <li><a href="hej.html">Kontakt</a></li>
+                <li><a href="hej.html">Nyhedsmails</a></li>
+                <li><a href="hej.html">Original</a></li>
+            </ul>
+        </li>
+        <li class="click"><a href="hej.html">Job i Normal</a></li>
+        <li class="click"><a href="hej.html">Spånsoratet modtagere</a></li>
+        <li id="shopping"><a href="hej.html"><i class="material-icons">shopping_cart</i></a></li>
+    </ul>
+
+    <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><i class="material-icons">close</i></a></li>
+        <li>Produkter
+            <ul class="sideSubmenu">
+                <li><a href="produktoversigt.html">Produktoversigt</a></li>
+                <li><a href="hej.html">Normale varer</a></li>
+                <li><a href="hej.html">Unormale priser</a></li>
+                <li><a href="trending.html">Trending</a></li>
+                <li><a href="hej.html">Nyheder</a></li>
+                <li><a href="hej.html">Testvindere</a></li>
+            </ul>
+        </li>
+        <li>Butik
+            <ul class="sideSubmenu">
+                <li><a href="hej.html">Find butik/åbningstid</a></li>
+                <li><a href="hej.html">Planlæg dit besøg</a></li>
+                <li><a href="navigation.html">Navigation i butik</a></li>
+                <li><a href="hej.html">Normal i andre lande</a></li>
+                <li><a href="hej.html">Gæstebogen</a></li>
+                <li><a href="hej.html">Bestsellers</a></li>
+            </ul>
+        </li>
+        <li>Webshop
+            <ul class="sideSubmenu">
+                <li><a href="hej.html">Køb gavekort</a></li>
+                <li><a href="hej.html">Er vi live?</a></li>
+                <li><a href="hej.html">Retur</a></li>
+                <li><a href="hej.html">FAQ´en</a></li>
+            </ul>
+        </li>
+        <li>Unikmand
+            <ul class="sideSubmenu">
+                <li><a href="hej.html">Unikmand anbefaler</a></li>
+                <li><a href="hej.html">Få mig ud-knappen</a></li>
+                <li><a href="hej.html">Brevkassen</a></li>
+            </ul>
+        </li>
+        <li >Om Normal
+            <ul id="om" class="sideSubmenu">
+                <li><a href="hej.html">Om os</a></li>
+                <li><a href="hej.html">Ordbogen</a></li>
+                <li><a href="hej.html">Følg os</a></li>
+                <li><a href="hej.html">Lykkeliga</a></li>
+                <li><a href="hej.html">FAQ</a></li>
+                <li><a href="hej.html">Warehouse</a></li>
+                <li><a href="hej.html">Kontakt</a></li>
+                <li><a href="hej.html">Nyhedsmails</a></li>
+                <li><a href="hej.html">Original</a></li>
+            </ul>
+        </li>
+        
+        <li><a href="hej.html">Job i Normal</a></li>
+        <li><a href="hej.html">Spånsoratet modtagere</a></li>
+    </ul>
+</nav>
+</header>
+
+
+<!--Her sætter jeg billeder af produkterne ind med tilhørende overskrift-->
+    <h1>Produktoversigt</h1>
+    
+<div class="container">
+
+   <div><a href="beskrivelse.html">
+        <h6>
+           Hudpleje
+        </h6>
+        <img src="img/hudpleje.webp" alt="Hudpleje">
+   </a> </div>
+    
+    <div>
+    <a href="hej.html">
+        <h6>
+           Snacks
+        </h6>
+        <img src="img/snacks.webp" alt="Snacks">
+    </a>
+</div>
+    
+    <div><a href="hej.html">
+        <h6>
+           Rengøringsmidler
+        </h6>
+        <img src="img/rengøringsmidler.webp" alt="Rengøringsmidler">
+    </a></div>
+    
+   <div> <a href="hej.html"> 
+        <h6>
+           Helse og velvær
+        </h6>
+        <img src="img/vitamin.webp" alt="Vitaminer">
+    </a></div>
+
+   <div><a href="hej.html">
+        <h6>
+           Parfume
+        </h6>
+        <img src="img/parfume.webp" alt="Parfume">
+    </a></div>
+    
+    <div><a href="hej.html">
+        <h6>
+           Makeup
+        </h6>
+        <img src="img/makeup.webp" alt="Makeup">
+    </a></div>
+    
+</div>
+
+    
+<!--Her laver jeg min footer hvor jeg sætter links ind til forskellige sider i div bokse-->
+<footer>
+    <ul class="upfooter">
+        <li><a href="hej.html">Smileyrapport</a></li>
+        <li><a href="hej.html">Tilbagekaldelser</a></li>
+        <li><a href="hej.html">Privatlivspolitik</a></li>
+        <li><a href="hej.html">Find butik</a></li>
+        <li><a href="hej.html">Cookies</a></li>
+    </ul>
+
+    <div class="downfooter">
+        <a href="hej.html"><img class="socialeMedier" src="img/socialemedier.webp" alt=""></a>
+        <a href="hej.html"><img class="kontakt" src="img/kontakt.webp" alt="Kontakt kundeservice"></a>
+    </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
